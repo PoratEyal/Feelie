@@ -1,0 +1,78 @@
+.emoji-card {
+  height: 100%;
+  min-height: 0;
+  max-height: min(400px, 85vh);
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.emoji-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.emoji-card:active {
+  transform: scale(0.98);
+}
+
+.emoji-card .emoji-wrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.emoji-card .emoji {
+  font-size: clamp(3rem, 12vw, 8rem);
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.05));
+  transition: all 0.2s;
+}
+
+.emoji-card:hover .emoji {
+  filter: drop-shadow(0 4px 6px -1px rgb(0 0 0 / 0.1));
+}
+
+.emoji-card .label {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .emoji-card {
+    padding: 1rem 1.5rem;
+  }
+
+  .emoji-card .emoji {
+    font-size: clamp(4rem, 10vw, 9rem);
+  }
+
+  .emoji-card .label {
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .emoji-card {
+    padding: 1.5rem 2rem;
+  }
+
+  .emoji-card .label {
+    font-size: 1.25rem;
+  }
+}

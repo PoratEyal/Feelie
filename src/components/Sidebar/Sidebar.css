@@ -1,0 +1,137 @@
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.3);
+  z-index: 40;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 18rem;
+  min-width: 18rem;
+  max-width: 18rem;
+  flex-shrink: 0;
+  background-color: rgb(248 250 252);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+  transform: translateX(100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  .sidebar.closed,
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar {
+    box-shadow: -4px 0 16px -4px rgb(0 0 0 / 0.06);
+  }
+}
+
+.sidebar-nav {
+  padding: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s;
+  text-align: right;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.sidebar-item:hover {
+  background-color: rgb(249 250 251);
+}
+
+.sidebar-item.active:hover {
+  background-color: transparent;
+}
+
+.sidebar-item-icon {
+  font-size: 1.5rem;
+}
+
+.sidebar-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar-item-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.sidebar-item-desc {
+  font-size: 0.75rem;
+  color: rgb(156 163 175);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-voice {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.sidebar-voice-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sidebar-voice-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(229 231 235);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.sidebar-voice-btn.default {
+  background-color: white;
+  color: rgb(75 85 99);
+}
+
+.sidebar-voice-btn.default:hover {
+  background-color: rgb(249 250 251);
+}
+
+.sidebar-voice-btn.selected {
+  border-color: rgb(244 114 182);
+  background-color: rgb(253 242 248);
+  color: rgb(219 39 119);
+}
+
