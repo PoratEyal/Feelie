@@ -1,40 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Feeli
 
-## Getting Started
+**A communication app that helps people express themselves in Hebrew—using emojis and speech.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What is Feeli?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Feeli is an AAC (Augmentative and Alternative Communication) app designed for Hebrew speakers who have difficulty speaking or prefer to communicate visually. Instead of typing or writing, users tap on emoji cards—and the app speaks the word or phrase aloud in Hebrew.
 
-## Text-to-Speech (הקראה)
+---
 
-The app uses **gtts** (Google Translate TTS) for Hebrew – no API key or setup required.
+## Who is it for?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- People with speech difficulties or communication challenges
+- Children and adults who communicate better through pictures and symbols
+- Anyone who needs a simple, visual way to express feelings, needs, or everyday phrases in Hebrew
+- Families, caregivers, and educators supporting nonverbal or minimally verbal individuals
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Why Feeli?
 
-To learn more about Next.js, take a look at the following resources:
+Communication is a basic human need. When speaking is hard, people can feel isolated or frustrated. Feeli aims to give a voice to those who struggle to use their own—through familiar emojis, clear categories, and natural Hebrew speech.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How it works
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Browse categories** — Home, Emotions, Needs, Body/Pain, Regulation, Social, Activities, Time, Family, Food & Drink
+2. **Tap a card** — Each emoji represents a word or phrase. One tap speaks it aloud in Hebrew
+3. **Add your own words** — Type any word or phrase; the app suggests an emoji and saves it to your personal list
+4. **Choose a voice** — Select a male or female Hebrew voice that feels right for you
