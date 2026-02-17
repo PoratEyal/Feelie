@@ -140,6 +140,7 @@ export function useTextToSpeech() {
   );
 
   const isSupported = true;
+  const isFemale = selectedVoice === VOICE_FEMALE;
 
-  return { speak, preload, isSupported, selectedVoice, setSelectedVoice };
+  return { speak, preload, isSupported, selectedVoice, setSelectedVoice, isFemale };
 }

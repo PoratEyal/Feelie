@@ -20,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Smooth touch scrolling on iOS */
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

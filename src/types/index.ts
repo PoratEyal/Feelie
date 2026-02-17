@@ -1,7 +1,9 @@
-// Data types
+// Data types - text that can be different for male/female voice
+export type GenderedText = string | { m: string; f: string };
+
 export interface ButtonItem {
-  label: string;
-  speech: string;
+  label: GenderedText;
+  speech: GenderedText;
   emoji: string;
 }
 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Varela_Round } from "next/font/google";
 import "./globals.css";
 
@@ -7,6 +7,12 @@ const varelaRound = Varela_Round({
   subsets: ["hebrew", "latin"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: "Feeli - תקשורת בלי מילים",
