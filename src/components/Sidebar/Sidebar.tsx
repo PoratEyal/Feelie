@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { categories } from "@/data/categories";
 import type { SidebarProps } from "@/types";
 import "./Sidebar.css";
@@ -91,6 +92,12 @@ export default function Sidebar({
             );
           })}
         </nav>
+
+        <div className="sidebar-footer">
+          <Link href="/privacy" className="sidebar-footer-link">מדיניות פרטיות</Link>
+          <span className="sidebar-footer-sep">·</span>
+          <Link href="/support" className="sidebar-footer-link">תמיכה</Link>
+        </div>
 
         <div className="sidebar-voice">
           <div className="sidebar-voice-buttons">

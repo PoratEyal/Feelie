@@ -114,6 +114,30 @@
   white-space: nowrap;
 }
 
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-footer-link {
+  font-size: 0.75rem;
+  color: rgb(156 163 175);
+  text-decoration: none;
+}
+
+.sidebar-footer-link:hover {
+  color: rgb(107 114 128);
+  text-decoration: underline;
+}
+
+.sidebar-footer-sep {
+  font-size: 0.75rem;
+  color: rgb(209 213 219);
+}
+
 .sidebar-voice {
   padding: 1rem;
   padding-top: 0;
